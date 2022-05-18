@@ -11,7 +11,7 @@ export class ProductListComponent {
   constructor(@Inject(GETS_ALL_PRODUCT_DTO) private _getsAllProductDto: GetsAllProductDtoPort, @Inject(REMOVES_PRODUCT_DTO) private _removesProductDto: RemovesProductDtoPort) {
   }
 
-  onRemoveProductClicked(): void {
-    this._removesProductDto.remove();
+  onRemoveProductClicked(id : string): void {
+    this._removesProductDto.remove(id);
   }
 }

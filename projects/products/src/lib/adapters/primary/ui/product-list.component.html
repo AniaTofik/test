@@ -1,4 +1,6 @@
 <ul>
-   
-    <li *ngFor="let item of productList$ | async">{{ item.name }}, {{item.price}}$ <button (click)="onRemoveProductClicked(item.id)"></button></li>
+  <li *ngFor="let item of productList$ | async">
+    {{ item.name }}, {{ item.price }}$
+    <button (click)="onRemoveProductClicked(item.id)">Delete product</button>
+</li>
 </ul>

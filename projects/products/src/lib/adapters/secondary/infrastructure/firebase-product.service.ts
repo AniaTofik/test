@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
-import { AngularFirestore } from '@angular/fire/firestore';
 import { AddsProductDtoPort } from '../../../application/ports/secondary/adds-product.dto-port';
 import { ProductDTO } from '../../../application/ports/secondary/product.dto';
 import { Observable } from 'rxjs';

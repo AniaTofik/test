@@ -12,7 +12,7 @@ export class ProductsComponent {
   onProductFormSubmited(productForm: FormGroup): void {
     this._addsProductDto.add({
       name: productForm.get('name')?.value,
-      name: productForm.get('price')?.value,
+      price: productForm.get('price')?.value,
     });
   }
 }
